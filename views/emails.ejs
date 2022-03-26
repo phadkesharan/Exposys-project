@@ -19,7 +19,7 @@
     <h3>SuccessFully uploaded!</h3>
 
     <form class="form-control" action="/compose" method="get">
-      <a href="/compose" class="btn btn-secondary">Compose mail</a>
+      <a href="/compose" class="btn btn-primary" id="compose">Compose mail</a>
     </form>
     <h4>Valid Emails</h4>
     <a href=""></a>
@@ -27,7 +27,7 @@
       <ol class="list-group">
         <% valid.map((item)=>{ %>
 
-          <li class="list-group-item">
+          <li class="list-group-item bg-success form-control-bg">
             <%= item['Email Address'] %>
           </li>
 
@@ -41,7 +41,7 @@
           <ol class="list-group">
             <% inValid.map((item)=>{ %>
 
-              <li class="list-group-item">
+              <li class="list-group-item bg-danger form-control-bg">
                 <%= item['Email Address'] %>
               </li>
 
